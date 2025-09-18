@@ -22,7 +22,7 @@ def extract_data (text: str, pattern_type: str) -> list:
     # a variable to store the regular expression
     regex = PATTERNS[pattern_type]
     #varible that will store the matches and return them
-    result = re.findall(text, regex)
+    result = re.findall(regex, text)
     return result
 
 # demo test
