@@ -25,4 +25,22 @@ def extract_data (text: str, pattern_type: str) -> list:
     result = re.findall(text, regex)
     return result
 
-
+# demo test
+if __name__ == "__main__":
+    sample_test = """
+    Hello, I am Yonas. 
+    My email is resstassure@fmail.com, and I visit https://www.example.com often.
+    Call me at (123) 456-7890 or 123-456-7890. 
+    My credit card: 1234-5678-9012-3456. 
+    Let's meet at 2:30 PM or 14:30.
+    Here’s some HTML: <div class="example">Hello</div>.
+    Don’t forget the hashtags: #python #RegexHackathon.
+    That book cost $1,234.56.
+    """
+    # for loop to iterate over a list of pattern types for testing
+    user_input = ["email", "url", "phone", "credit_card", "time", "html_tag", "hashtag", "currency"]
+    for category in user_input:
+        """ passing the category to the above fucntion with the sample test data and print the result"""
+        matches = extract_data(sample_test, category)
+        """prints the category with the matching data in a clear formated way"""
+        print(f"{category.capitalize()}s: {matches}")
