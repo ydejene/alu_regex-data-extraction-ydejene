@@ -16,12 +16,19 @@ PATTERNS = {
 
 # define a function that will extract the required data's using the power of regex
 def extract_data (text: str, pattern_type: str) -> list:
-    # validation for the selected pattern type 
+    """
+    Extracts all matches of a given regex pattern type from the input text (string).
+
+    Args:
+        text(str) : The input string to search in
+        pattern_type (str) : The name of the regex pattern (must exist in PATTERNS).
+
+    Returns:
+        list : A list of all matches found.
+    """
     if pattern_type not in PATTERNS:
         raise ValueError (f"unknown pattern: {pattern_type}")
-    # a variable to store the regular expression
     regex = PATTERNS[pattern_type]
-    #varible that will store the matches and return them
     result = re.findall(regex, text)
     return result
 
