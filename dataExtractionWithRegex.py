@@ -28,9 +28,7 @@ def extract_data (text: str, pattern_type: str) -> list:
     """
     if pattern_type not in PATTERNS:
         raise ValueError (f"unknown pattern: {pattern_type}")
-    regex = PATTERNS[pattern_type]
-    result = re.findall(regex, text)
-    return result
+    return re.findall(PATTERNS[pattern_type], text)
 
 # demo test
 if __name__ == "__main__":
