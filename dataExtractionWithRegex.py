@@ -40,7 +40,7 @@ if __name__ == "__main__":
     # for loop to iterate over a list of pattern types for testing
     user_input = ["email", "url", "phone", "credit_card", "time", "html_tag", "hashtag", "currency"]
     for category in user_input:
-        """ passing the category to the above fucntion with the sample test data and print the result"""
+        # passing the category to the above fucntion with the sample test data and print the result
         matches = extract_data(sample_test, category)
-        """prints the category with the matching data in a clear formated way"""
+        # prints the category with the matching data in a clear formated way
         print(f"{category.capitalize()}s: {matches}")
