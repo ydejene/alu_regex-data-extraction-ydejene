@@ -20,3 +20,36 @@ The tool extracts the following types of data:
 
 ## Setup Instructions
 1. Clone the respository: 
+``` bash
+git clone https://github.com/ydejene/alu_regex-data-extraction-ydejene.git
+cd alu_regex-data-extraction-ydejene
+```
+
+2. Run the script:
+```bash
+python dataExtractionWithRegex.py
+```
+
+3. Modify the sample text inside the script to test your own data.
+
+## Sample Output
+Example run:
+```bash
+$ ./dataExtractionWithRegex.py
+Emails: ['resstassure@fmail.com']
+Urls: ['https://www.example.com']
+Phones: ['(123) 456-7890', '123-456-7890', '123.456.7890']
+Credit_cards: ['1234-5678-9012-3456']
+Times: ['2:30 PM', '14:30']
+Html_tags: ['<div class="example">', '</div>']
+Hashtags: ['#python', '#RegexHackathon']
+Currencys: ['$1,234.56']
+```
+
+## Edge-Case Handling
+The regex patterns are designed to handle tricky cases such as:
+ -**Malformed emails --> test@@mail.com (skipped)**
+ -****
+ -****
+ -****
+ -****
