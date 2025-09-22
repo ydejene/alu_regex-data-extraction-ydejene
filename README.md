@@ -22,15 +22,19 @@ The tool extracts the following types of data:
 1. Clone the respository: 
 ``` bash
 git clone https://github.com/ydejene/alu_regex-data-extraction-ydejene.git
+```
+
+2. Navigate to the project folder:
+```bash
 cd alu_regex-data-extraction-ydejene
 ```
 
-2. Run the script:
+3. Run the script:
 ```bash
 python dataExtractionWithRegex.py
 ```
 
-3. Modify the sample text inside the script to test your own data.
+4. Modify the sample text inside the script to test your own data.
 
 ## Sample Output
 Example run:
