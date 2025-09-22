@@ -1,0 +1,22 @@
+# Regex Data Extraction Tool
+
+## Project Overview
+
+This project demonstrates the power of Regular Expressions (Regex) in extracting structured data from raw text. It is implemented in Python and targets multiple data formats such as emails, phone numbers, URLs, and more.
+
+The program processes input strings, applies carefully designed regex patterns, and outputs the results in a structured, easy-to-read format.
+
+## Features
+The tool extracts the following types of data:
+
+- **Email addresses**
+- **Phone numbers(various formats, e.g., 123-456-7890, (123) 456-7890)**
+- **URLS**
+- **Credit card numbers**
+- **Currency amounts (e.g., $1,234.56)**
+- **Times (12-hour and 24-hour formats, e.g., 2:30 PM, 14:30)**
+- **HTML tags**
+- **Hashtags**
+
+## Setup Instructions
+1. Clone the respository: 
