@@ -6,7 +6,7 @@ import re
 PATTERNS = {
     "email": r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}",
     "url": r"https?://[^\s]+",
-    "phone": r"(?:\(\d{3}\)\s*|\d{3}[-.])?\d{3}[-.]\d{4}",
+    "phone": r"\b(?:\(\d{3}\)\s*\d{3}[-.]\d{4}|\d{3}[-.]\d{3}[-.]\d{4})\b",
     "credit_card": r"\b(?:\d{4}[-\s]?){3}\d{4}\b",
     "time": r"\b(?:[01]?\d|2[0-3]):[0-5]\d(?:\s?(?:AM|PM))?\b",
     "html_tag": r"<[^>]+>",
@@ -35,7 +35,7 @@ if __name__ == "__main__":
     sample_test = """
     Hello, I am Yonas. 
     My email is resstassure@fmail.com, and I visit https://www.example.com often.
-    Call me at (123) 456-7890 or 123-456-7890. 
+    Call me at (123) 456-7890 or 123-456-7890 or 123.456.7890.  
     My credit card: 1234-5678-9012-3456. 
     Let's meet at 2:30 PM or 14:30.
     Here’s some HTML: <div class="example">Hello</div>.
