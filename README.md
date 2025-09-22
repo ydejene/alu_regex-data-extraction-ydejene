@@ -52,17 +52,17 @@ Currencys: ['$1,234.56']
 
 ## Edge-Case Handling
 The regex patterns are designed to handle tricky cases such as:
- -**Malformed emails → test@@mail.com (skipped)**
- -**Phone formats → 123-456-7890, 123.456.7890, (123) 456-7890**
- -**Credit cards → 1234-5678-9012-3456 or 1234 5678 9012 3456**
- -**Currencies → $1,234.56, $1000, $0.99**
- -**Times → both 12-hour (2:30 PM) and 24-hour (14:30)**
+ - **Malformed emails → test@@mail.com (skipped)**
+ - **Phone formats → 123-456-7890, 123.456.7890, (123) 456-7890**
+ - **Credit cards → 1234-5678-9012-3456 or 1234 5678 9012 3456**
+ - **Currencies → $1,234.56, $1000, $0.99**
+ - **Times → both 12-hour (2:30 PM) and 24-hour (14:30)**
 
  ## Repository Organization
 
- -**dataExtractionWithRegex.py → main Python script with regex patterns**
- -**README.md → project overview and documentation**
- -**Sample inputs → included inside the script for easy testing**
+ - **dataExtractionWithRegex.py → main Python script with regex patterns**
+ - **README.md → project overview and documentation**
+ - **Sample inputs → included inside the script for easy testing**
 
  Meaningful commits are made throughout development to track progress.
 
